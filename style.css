@@ -1,0 +1,114 @@
+* {
+  box-sizing: content-box;
+}
+@font-face {
+  font-family: "outfit";
+  src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "youngserif";
+  src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+body {
+  background-color: #f3e5d7;
+  max-width: 1444px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  width: 736px;
+  min-height: 1708;
+  border: 3px solid none;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  margin: auto;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+img {
+  position: relative;
+  margin-left: 40px;
+  margin-top: 20px;
+  width: 656;
+  height: 300px;
+  border-radius: 20px;
+}
+.start-recipe {
+  font-family: "youngserif";
+  font-weight: 200;
+  margin-left: 20px;
+  position: relative;
+  top: 20px;
+}
+.p-start {
+  font-family: "outfit";
+  font-size: 16px;
+  max-width: 680px;
+  color: rgba(133, 70, 50, 1);
+  margin-left: 20px;
+}
+.sector {
+  position: relative;
+  margin: auto;
+  margin-left: 40px;
+  text-align: left;
+}
+.preperation {
+  background-color: rgba(255, 247, 251, 1);
+  width: 650px;
+  border-radius: 12px;
+}
+h2 {
+  margin-left: 10px;
+  color: rgba(133, 70, 50, 1);
+}
+span {
+  font-weight: bold;
+}
+span,
+li {
+  color: rgba(95, 86, 77, 1);
+  font-size: 16px;
+  line-height: 30px;
+  max-width: 600px;
+}
+.nutri-para {
+  position: relative;
+  margin-left: 10px;
+  font-family: "outfit";
+  font-size: 18px;
+}
+.nutrition {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Δύο στήλες με ίση κατανομή */
+  max-width: 650px;
+}
+
+.nutrition-item {
+  display: contents; /* Τα παιδιά θα συμπεριφερθούν σαν να είναι άμεσα παιδιά του grid container 
+  These elements don't produce a specific box by themselves. They are replaced by 
+  their pseudo-box and their child boxes. Please note that the CSS Display Level 3 spec
+   defines how the contents value should affect "unusual elements" — elements that aren't rendered purely 
+   by CSS box concepts such as replaced elements.*/
+}
+
+.nutrition-label {
+  grid-column: 1; /* Βρίσκεται στην πρώτη στήλη */
+  padding: 0.5em 0;
+  border-bottom: solid 0.1em rgba(133, 70, 50, 1);
+}
+
+.nutrition-value {
+  grid-column: 2; /* Βρίσκεται στη δεύτερη στήλη */
+  padding: 0.5em 0;
+  border-bottom: solid 0.1em rgba(133, 70, 50, 1);
+  text-align: end;
+}
+
+.nutrition-item:last-child .nutrition-label,
+.nutrition-item:last-child .nutrition-value {
+  border-bottom: none; /* Αφαιρεί το κάτω περίγραμμα από το τελευταίο στοιχείο */
+}
