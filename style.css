@@ -3,11 +3,11 @@
 }
 @font-face {
   font-family: "outfit";
-  src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+  src: url("Outfit-VariableFont_wght.ttf");
 }
 @font-face {
   font-family: "youngserif";
-  src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+  src: url("YoungSerif-Regular.ttf");
 }
 body {
    background-color: #f3e5d7;
